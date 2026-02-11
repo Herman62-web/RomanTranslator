@@ -15,11 +15,10 @@ body {
 }
 
 header {
-    background-color: #3b82f6;
+    background-color: #1e293b;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid #2563eb;
+    border-bottom: 2px solid #334155;
 }
 
 header h1 {
@@ -28,7 +27,6 @@ header h1 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -48,30 +46,26 @@ header h1 {
 }
 
 .mode-box {
-    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    background: #334155;
     padding: 12px 24px;
-    border-radius: 12px;
+    border-radius: 8px;
     min-width: 140px;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 600;
     color: #f0f9ff;
-    border: 2px solid #475569;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .mode-box.active {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background: #3b82f6;
     color: white;
-    border-color: #60a5fa;
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
     transform: translateY(-2px);
 }
 
 .swap-btn {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background: #3b82f6;
     color: white;
     border: none;
     width: 55px;
@@ -84,15 +78,11 @@ header h1 {
     justify-content: center;
     transition: all 0.3s ease;
     flex-shrink: 0;
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    position: relative;
-    z-index: 1;
 }
 
 .swap-btn:hover {
-    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    background: #2563eb;
     transform: scale(1.1) rotate(180deg);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
 }
 
 .swap-btn:active {
@@ -101,32 +91,27 @@ header h1 {
 
 .input-container {
     margin-bottom: 30px;
-    background: rgba(30, 41, 59, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
+    background: #1e293b;
+    border-radius: 8px;
     padding: 25px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 textarea {
     width: 100%;
-    background: rgba(15, 23, 42, 0.9);
+    background: #0f172a;
     color: #f8fafc;
-    border: 2px solid #475569;
-    border-radius: 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
     padding: 18px;
     font-size: 1.1rem;
     resize: none;
     transition: all 0.3s ease;
     line-height: 1.5;
-    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 textarea:focus {
     outline: none;
     border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2), inset 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 textarea::placeholder {
@@ -142,23 +127,19 @@ textarea::placeholder {
 
 .output-container {
     margin-bottom: 30px;
-    background: rgba(30, 41, 59, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
+    background: #1e293b;
+    border-radius: 8px;
     padding: 25px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .output-box {
-    background: rgba(15, 23, 42, 0.9);
-    border: 2px solid #475569;
-    border-radius: 12px;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 8px;
     padding: 20px;
     min-height: 150px;
     word-wrap: break-word;
     margin-bottom: 20px;
-    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .output-text {
@@ -185,24 +166,22 @@ textarea::placeholder {
 }
 
 .copy-btn {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #10b981;
     color: white;
     border: none;
     padding: 12px 24px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 8px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
 .copy-btn:hover {
-    background: linear-gradient(135deg, #0da271 0%, #047857 100%);
+    background: #0da271;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
 .copy-btn:active {
@@ -210,8 +189,7 @@ textarea::placeholder {
 }
 
 .copy-btn.copied {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    background: #3b82f6;
 }
 
 .modal {
@@ -222,7 +200,6 @@ textarea::placeholder {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(4px);
     z-index: 1000;
     align-items: center;
     justify-content: center;
@@ -234,13 +211,12 @@ textarea::placeholder {
 }
 
 .modal-content {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border-radius: 16px;
+    background: #1e293b;
+    border-radius: 8px;
     width: 100%;
     max-width: 420px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #475569;
     transform: scale(0.9);
     animation: modalAppear 0.3s ease forwards;
 }
@@ -252,10 +228,9 @@ textarea::placeholder {
 }
 
 .modal-header {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background: #3b82f6;
     padding: 24px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
 }
 
 .modal-header h3 {
@@ -264,7 +239,6 @@ textarea::placeholder {
     justify-content: center;
     gap: 12px;
     font-size: 1.4rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .modal-body {
@@ -285,40 +259,27 @@ textarea::placeholder {
 .modal-footer {
     padding: 24px;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #475569;
 }
 
 .modal-ok {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background: #3b82f6;
     color: white;
     border: none;
     padding: 12px 36px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .modal-ok:hover {
-    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    background: #2563eb;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .modal-ok:active {
     transform: translateY(0);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(15, 23, 42, 0.9);
-    color: #94a3b8;
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -387,12 +348,7 @@ footer {
         font-size: 1.4rem;
     }
     
-    footer {
-        padding: 15px;
-        font-size: 0.8rem;
-    }
-    
     .modal-body {
         padding: 24px 20px;
     }
-}
+    }
